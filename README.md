@@ -1,5 +1,5 @@
 # HealthPro- A Hospital Management System
-This webiste aims to streamline and automate various administrative, operational, and clinical processes within a healthcare facility. It aims to enhance the efficiency and effectiveness of hospital operations by providing a comprehensive and integrated solution for managing patient information, medical records, appointments, billing, and more.
+This website aims to streamline and automate various administrative, operational, and clinical processes within a healthcare facility. It aims to enhance the efficiency and effectiveness of hospital operations by providing a comprehensive and integrated solution for managing patient information, medical records, appointments, billing, and more.
 
 # System Features
 1) **User Sign In**:
