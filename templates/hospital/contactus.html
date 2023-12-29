@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Contact Us</title>
+  <style media="screen">
+
+    .alert {
+      margin-top: 0px;
+      font-size: 30px;
+      font-family: 'Poppins', sans-serif;
+      font-weight:bold !important;
+    }
+    
+   
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/contact.jpg" %}') !important ;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      opacity: 0.85;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  {% include "hospital/navbar.html" %}
+  <br><br>
+
+  <center>
+    <div class="jumbotron">
+    <h3 class='alert'>Send Us Your Valuable Feedback !</h3>
+
+    <form method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Send Message" class='btn btn-dark btn-lg'>
+      </div>
+    </form>
+  </div>
+  </center>
+  {% include "hospital/footer.html" %}
+</body>
+
+
+</html>

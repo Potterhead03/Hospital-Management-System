@@ -1,0 +1,36 @@
+{% extends 'hospital/homebase.html' %}
+{% load static %}
+{% block content %}
+
+<br>
+<br>
+<style>
+  *{
+      font-family: poppins,sans-serif;
+    }
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/contact.jpg" %}') !important ;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      opacity: 0.85;
+    }
+    .display-4{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Poppins,sans-serif;
+  }
+</style>
+<div class="jumbotron" style="margin-bottom:0px;">
+  <h1 class="display-4" style="text-align:center;" style="font-weight: bold; font-size: 40px;">Hello, Admin</h1>
+  <p class="lead">Welcome to HealthPro</p>
+  <hr class="my-4">
+  <p style="font-size: 20px;">You can access various features after Login/SignUp.</p>
+  <p class="lead">
+    <a class="btn btn-dark btn-lg" href="/adminsignup" role="button">SignUp</a>
+    <a class="btn btn-dark btn-lg" href="/adminlogin" role="button">Login</a>
+  </p>
+</div>
+
+{% endblock content %}

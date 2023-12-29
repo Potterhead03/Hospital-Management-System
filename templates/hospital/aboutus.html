@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Bree+Serif&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>HeathPro</title>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/about.jpg" %}') !important ;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      opacity: 0.85;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+      font-size: 40px;
+      font-family: 'Poppins', sans-serif;
+      font-weight:bold !important;
+    }
+    
+    .display-4{
+      font-weight:bold !important;
+    }
+
+    .lead{
+      font-size: 25px !important;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 20px;
+      font-weight: 400 !important;
+      
+    }
+
+    .para{
+      font-size: 22px !important;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bolder;
+    }
+  </style>
+  <title>HealthPro</title>
+</head>
+
+<body>
+  {% include "hospital/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <h1 class="display-4">HeathPro</h1>
+    <p class="lead">The primary purpose of HealthPro is to streamline and automate various administrative, operational, and clinical processes within a healthcare facility. It aims to enhance the efficiency and effectiveness of hospital operations by providing a comprehensive and integrated solution for managing patient information, medical records, appointments, billing, and more.The relevant benefits of the system include improved operational efficiency, enhanced patient care, reduced errors, and streamlined financial management. It aligns with corporate goals and business strategies by providing a robust, integrated solution to optimize healthcare service delivery.</p>
+    <hr class="my-4">
+    <p class="para">Explore our Website!</p>
+    <p class="lead">
+      <a class="btn btn-dark btn-lg" href="/" role="button">HOME</a>
+    </p>
+  </div>
+  {% include "hospital/footer.html" %}
+</body>
+
+
+</html>
